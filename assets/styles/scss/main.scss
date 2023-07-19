@@ -1,0 +1,23 @@
+@import "normalize";
+@import "header";
+@import "footer";
+
+body{
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .main{
+        min-height: calc(100vh - 60px - 112px);
+    }
+    .test_line{
+        width: 10px;
+        height: 1200px;
+        background-color: red;
+    }
+    .test_text{
+        color: white;
+
+    }
+}

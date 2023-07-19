@@ -1,0 +1,54 @@
+body{
+    header{
+        background-color: white;
+        display: flex;
+        height: 112px;
+        display: flex;
+        // justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        nav{
+            flex:1;
+            display: flex;
+            // background-color: aqua;
+            justify-content: center;
+            .nav_link_container{
+                // background-color: aqua;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                cursor: pointer;
+                &:hover{
+                    .nav_link_pointer{
+                        background-color: black;
+                    }
+                    
+                }
+                .nav_links{
+                color: black;
+                }
+                .nav_link_pointer{
+                    width: 10px;
+                    height: 2px;
+                    background-color: transparent;
+                    transition: background-color 0.3s ease; /* Плавний перехід */
+                }
+                .active{
+                    background-color: black;
+                }
+            }
+
+        }
+        .logo{
+            display: block;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,32 @@
+body{ 
+    footer{
+        position: relative;
+        height: 60px;
+        background-color: #1D1D1D;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10% 0px 10%;
+        .footer_links{
+        color: white;
+        text-decoration: none;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+
+        }
+        .footer_leftside{
+            display: flex;
+            .footer_links{
+            margin-right: 24px;
+            }
+
+        }
+        .footer_rightside{
+
+        }
+    }
+}
+ 
+  
