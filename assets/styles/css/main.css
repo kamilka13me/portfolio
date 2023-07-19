@@ -263,6 +263,7 @@ body header {
   align-items: center;
   padding-left: 10%;
   padding-right: 10%;
+  user-select: none;
 }
 body header nav {
   flex: 1;
@@ -320,6 +321,10 @@ body footer .footer_leftside {
 body footer .footer_leftside .footer_links {
   margin-right: 24px;
 }
+body footer .footer_rightside {
+  display: block;
+}
+
 body {
   min-height: 100vh;
   background-color: black;
