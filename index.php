@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="assets/styles/css/main.css">
+<link rel="stylesheet" href="/assets/styles/css/main.css">
 <title>Title</title>
 </head>
 <body>
@@ -52,7 +52,8 @@
 
 
 
-<script src="assets/scripts/main.js"></script>
-<script src="assets/scripts/header.js"></script>
+<script src="/global assets/jQery.js"></script>
+<script src="/assets/scripts/main.js"></script>
+<script src="/assets/scripts/header.js"></script>
 </body>
 </html>
