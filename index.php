@@ -24,7 +24,7 @@
         </div>
         <div class="nav_link_container">
             <div class="nav_links" id="experements">experements</div>
-            <div class="nav_link_pointer active "></div> 
+            <div class="nav_link_pointer"></div> 
         </div>
     </nav>
     <div class="logo">logo</div>
@@ -53,7 +53,8 @@
 
 
 <script src="/global assets/jQery.js"></script>
-<script src="/assets/scripts/main.js"></script>
 <script src="/assets/scripts/header.js"></script>
+<script src="/assets/scripts/main.js"></script>
+
 </body>
 </html>

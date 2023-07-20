@@ -4,13 +4,16 @@ var pages = {
     },
     pages: {
         about: "/pages/about/about.php",
+        work: "/pages/work/work.php",
+        articles: "/pages/articles/articles.php",
+        experements: "/pages/experements/experements.php",
     }
 };
 
       
       
 function content_insert(tab) {
-    console.log('Клікнули на елемент!' + tab);
+    console.log('insert' + tab);
 
     var responseElement = $('.index_main_block');
 
@@ -39,10 +42,15 @@ function content_insert(tab) {
       }
     }
 
-function init_main(){
+function init_main(is_init){
     let pathname = window.location.pathname.slice(1);
     console.log('Шлях: ', pathname);
     // style_insert(pages.styles[pathname]);
     content_insert(pages.pages[pathname]);
+
+    if (is_init === 1){
+      change_tab (pathname , 1);
+  }
 }
-init_main();
+
+init_main(1);

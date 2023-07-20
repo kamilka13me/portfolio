@@ -1,51 +1,57 @@
+function change_tab (tab,is_init) {
 
-// Функція, яка змінює URL адресу без перезавантаження сторінки
-function changeURL(newAddress) {
-  // newState.data=newAddress;
-  history.pushState({}, "", newAddress);
-  // console.log("URL адреса була змінена на: ", newAddress);
-}
+  console.log(tab);
 
-// Приклад конструкції switch case для зміни URL адреси залежно від умови
-function processPage(condition) {
+  button_id=tab;
+  // Зчитуємо id дочірнього елемента .nav_links
 
-  switch (condition) {
+
+  switch (button_id) {
     case "work":
-      changeURL("/"+condition);
+      var new_url = button_id;
       break;
     case "about":
-      changeURL("/"+condition);
+      var new_url = button_id;
       break;
     case "articles":
-      changeURL("/"+condition);
+      var new_url = button_id;
       break;
     case "experements":
-      changeURL("/"+condition);
+      var new_url = button_id;
       break;
     default:
-      changeURL("/404");
+      var new_url = "/404";
   }
-  init_main();
-  // $("#"+condition).find(".nav_link_pointer").addClass("active");
+
+  // change url
+  history.pushState({}, "", new_url);
+
+  // change active
   $(".nav_link_pointer").removeClass("disable");
-  $("#"+condition).siblings(".nav_link_pointer").addClass("active");
-}
+  $("#"+button_id).siblings(".nav_link_pointer").addClass("active");
+
+  if (is_init === null ){
+    init_main();
+
+  }
+
+};
+
 
 // Додаємо обробник події "click" на всі елементи з класом "nav_link_container"
-$(".nav_link_container").on("click", function () {
-  // Зчитуємо id дочірнього елемента .nav_links
-  const linkId = $(this).find(".nav_links").attr("id");
-  processPage(linkId);
+$(".nav_link_container").on("click", function() {
+  var button_id = $(this).find(".nav_links").attr("id");  
+  console.log(button_id+"ddd")
+  change_tab(button_id, null);
 });
 
 
+// nav animation
 $(document).ready(function() {
   $('.nav_link_container').mouseenter(() => {
-    console.log("rhere");
     $('.active').addClass('disable').removeClass('active');
   });
   $('.nav_link_container').mouseleave(() => {
-    console.log("rhere");
     $('.disable').addClass('active').removeClass('disable');
   });
 });
