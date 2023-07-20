@@ -4,11 +4,11 @@
 
 body{
     min-height: 100vh;
-    background-color: black;
+    // background-color: black;
     position: relative;
     display: flex;
     flex-direction: column;
-    .main{
+    .index_main_block{
         min-height: calc(100vh - 60px - 112px);
     }
     .test_line{

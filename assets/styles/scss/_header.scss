@@ -26,11 +26,11 @@ body{
                 align-items: center;
                 margin-right: 10px;
                 cursor: pointer;
+
                 &:hover{
                     .nav_link_pointer{
-                        background-color: black;
-                    }
-                    
+                        background-color: grey;
+                    }                   
                 }
                 .nav_links{
                 color: black;
@@ -43,6 +43,9 @@ body{
                 }
                 .active{
                     background-color: black;
+                }
+                .disable{
+                    // background-color: black;
                 }
             }
 

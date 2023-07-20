@@ -280,7 +280,7 @@ body header nav .nav_link_container {
   cursor: pointer;
 }
 body header nav .nav_link_container:hover .nav_link_pointer {
-  background-color: black;
+  background-color: grey;
 }
 body header nav .nav_link_container .nav_links {
   color: black;
@@ -327,12 +327,11 @@ body footer .footer_rightside {
 
 body {
   min-height: 100vh;
-  background-color: black;
   position: relative;
   display: flex;
   flex-direction: column;
 }
-body .main {
+body .index_main_block {
   min-height: calc(100vh - 60px - 112px);
 }
 body .test_line {

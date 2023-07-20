@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-    <nav>
+    <nav class="navbar">
         <div class="nav_link_container">
             <div class="nav_links" id="work">work</div> 
             <div class="nav_link_pointer "></div>
@@ -24,7 +24,7 @@
         </div>
         <div class="nav_link_container">
             <div class="nav_links" id="experements">experements</div>
-            <div class="nav_link_pointer active"></div> 
+            <div class="nav_link_pointer active "></div> 
         </div>
     </nav>
     <div class="logo">logo</div>
@@ -33,7 +33,7 @@
 
 
 
-<div class="main">
+<div class="index_main_block">
 <!-- <div class="test_line"></div> -->
 <div class="test_text">test_text</div>
 </div>
