@@ -30,9 +30,10 @@ function change_tab (tab,is_init) {
   $(".nav_link_pointer").removeClass("disable");
   $("#"+button_id).siblings(".nav_link_pointer").addClass("active");
 
+
+
   if (is_init === null ){
     init_main();
-
   }
 
 };

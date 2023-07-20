@@ -27,15 +27,14 @@
             <div class="nav_link_pointer"></div> 
         </div>
     </nav>
-    <div class="logo">logo</div>
+    <div class="logo"><a href="/work">logo</a></div>
 </header>
 
 
 
 
 <div class="index_main_block">
-<!-- <div class="test_line"></div> -->
-<div class="test_text">test_text</div>
+
 </div>
 
 

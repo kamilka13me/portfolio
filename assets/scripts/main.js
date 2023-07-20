@@ -1,6 +1,9 @@
 var pages = {
     styles: {
-        about: "/pages/about/styles/css/main.css",
+        about: "/pages/about/assets/styles/css/main.css",
+        work: "/pages/work/assets/styles/css/main.css",
+        articles: "/pages/articles/assets/styles/css/main.css",
+        experements: "/pages/experements/assets/styles/css/main.css",
     },
     pages: {
         about: "/pages/about/about.php",
@@ -11,7 +14,25 @@ var pages = {
 };
 
       
+// const styleLink = "style.css"; // Замість "style.css" введіть ваш шлях до стилів
+
+// Функція для перевірки наявності стилів
+function isStylesheetLoaded(styleLink) {
+  // Отримуємо всі елементи <link> з атрибутом rel="stylesheet"
+  const linkElements = $("link[rel='stylesheet']");
+  for (let i = 0; i < linkElements.length; i++) {
+    // Отримуємо значення атрибуту href для поточного елемента
+    const href = $(linkElements[i]).attr("href");
+    // Порівнюємо значення атрибуту href зі значенням змінної styleLink
+    if (href === styleLink) {
+      return true; // Повертаємо true, якщо стиль знайдено
+    }
+  }
+  return false; // Повертаємо false, якщо стиль не знайдено
+}
       
+
+
 function content_insert(tab) {
     console.log('insert' + tab);
 
@@ -29,7 +50,17 @@ function content_insert(tab) {
 
   
   function style_innsert(style_link) {
-    $("head").append("<link rel='stylesheet' type='text/css' href='" + style_link + "'>");
+          // Виклик функції для перевірки наявності стилів і виведення результату в консоль
+          const isStyleLoaded = isStylesheetLoaded(style_link);
+          if (isStyleLoaded) {
+            console.log("Стиль з посиланням '" + style_link + "' знайдено в тезі.");
+
+          } else {
+            console.log("Стиль з посиланням '" + style_link + "' не знайдено в тезі.");
+            $("head").append("<link rel='stylesheet' type='text/css' href='" + style_link + "'>");
+          }
+
+
   }  
   
        // style remove
@@ -45,8 +76,9 @@ function content_insert(tab) {
 function init_main(is_init){
     let pathname = window.location.pathname.slice(1);
     console.log('Шлях: ', pathname);
-    // style_insert(pages.styles[pathname]);
     content_insert(pages.pages[pathname]);
+    
+    style_innsert(pages.styles[pathname]);
 
     if (is_init === 1){
       change_tab (pathname , 1);
@@ -54,3 +86,5 @@ function init_main(is_init){
 }
 
 init_main(1);
+
+

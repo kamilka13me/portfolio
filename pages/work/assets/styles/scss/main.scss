@@ -1,0 +1,66 @@
+body {
+    .index_main_block {
+        .work_page {
+            .header {
+                height: 720px;
+                background-color: black;
+                display: flex;
+
+                // justify-content: space-between;
+                .left_side {
+                    height: 100%;
+                    width: 100%;
+                    // background-color: red; 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 10%;
+                    padding-right: 10%;
+
+                    .left_side_container {
+                        color: white;
+
+                        .button_block {
+                            display: flex;
+
+                            .send_message_buton {
+                                border-radius: 12px;
+                                background: #FF6B00;
+                                display: flex;
+                                padding: 13px 24px;
+                                align-items: center;
+                                cursor: pointer;
+
+
+                            }
+
+                            .my_works_buton {
+                                display: flex;
+                                padding: 13px 16px;
+                                align-items: center;
+                                border-radius: 12px;
+                                background: white;
+                                color: black;
+                                margin-left: 12px;
+                                backdrop-filter: blur(50px);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .right_side {
+                    height: 100%;
+                    width: 100%;
+                    background-color: aqua;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
+
+            }
+        }
+    }
+}
