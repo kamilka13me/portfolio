@@ -40,10 +40,15 @@ body .index_main_block .work_page .header .left_side .left_side_container .butto
 body .index_main_block .work_page .header .right_side {
   height: 100%;
   width: 100%;
-  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 10%;
-  padding-right: 10%;
+}
+body .index_main_block .work_page .header .right_side .right_side_container {
+  background-image: url(/pages/work/assets/img/IMG_3720.JPG);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */

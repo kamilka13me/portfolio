@@ -6,11 +6,10 @@ body {
                 background-color: black;
                 display: flex;
 
-                // justify-content: space-between;
                 .left_side {
                     height: 100%;
                     width: 100%;
-                    // background-color: red; 
+
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -52,12 +51,21 @@ body {
                 .right_side {
                     height: 100%;
                     width: 100%;
-                    background-color: aqua;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    padding-left: 10%;
-                    padding-right: 10%;
+                    // margin-left: 10%;
+                    // margin-right: 10%;
+
+                    .right_side_container {
+                        background-image: url(/pages/work/assets/img/IMG_3720.JPG);
+                        height: 100%;
+                        width: 100%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+
+                    }
                 }
 
             }

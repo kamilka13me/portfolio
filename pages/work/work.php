@@ -11,7 +11,14 @@
                 </div>
             </div>
         </div>
-        <div class="right_side"></div>
+        <div class="right_side">
+            <div class="right_side_container">
+            </div>
+        </div>
+    </div>
+
+    <div class="first_tab">
+
     </div>
 </div>
 <script src="/pages/work/assets/scripts/main.js"></script>
