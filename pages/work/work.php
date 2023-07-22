@@ -50,6 +50,9 @@
             <h1>about me</h1>
             <h2>You can add what outcomes has this project brought after your design! For example, can show some real data.</h2>
             <div class="contact_btn">tell me more</div>
+            <img src="assets" alt="/pages/work/assets/img">
+            <img src="assets" alt="/pages/work/assets/img">
+            <img src="assets" alt="/pages/work/assets/img">
             
         </div>
     </div>
