@@ -51,4 +51,43 @@ body .index_main_block .work_page .header .right_side .right_side_container {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+body .index_main_block .work_page .first_tab {
+  position: relative;
+  width: 100%;
+  height: 720px;
+}
+body .index_main_block .work_page .first_tab .first_tab_container {
+  border-bottom: 1.5px solid black;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .index_main_block .work_page .first_tab .first_tab_container h2 {
+  width: 50%;
+  color: var(--text-icons-light-medium-emphasis, rgba(0, 0, 0, 0.6));
+  text-align: center;
+  font-family: Arial;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 28.8px */
+  letter-spacing: 0.017px;
+}
+body .index_main_block .work_page .first_tab .gradiend {
+  position: absolute;
+}
+body .index_main_block .work_page .first_tab .gradiend svg {
+  fill: linear-gradient(180deg, #FC50B7 0%, rgba(255, 197, 111, 0.46) 100%);
+  filter: blur(100px);
+  width: 100%;
+  height: 720px;
+}
+body .index_main_block .work_page .second_tab {
+  width: 100%;
+  height: 720px;
 }/*# sourceMappingURL=main.css.map */
