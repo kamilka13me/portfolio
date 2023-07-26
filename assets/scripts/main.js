@@ -1,15 +1,15 @@
 var pages = {
     styles: {
-        about: "/pages/about/assets/styles/css/main.css",
-        work: "/pages/work/assets/styles/css/main.css",
-        articles: "/pages/articles/assets/styles/css/main.css",
-        experements: "/pages/experements/assets/styles/css/main.css",
+        about: "/portfolio/pages/about/assets/styles/css/main.css",
+        work: "/portfolio/pages/work/assets/styles/css/main.css",
+        articles: "/portfolio/pages/articles/assets/styles/css/main.css",
+        experements: "/portfolio/pages/experements/assets/styles/css/main.css",
     },
     pages: {
-        about: "/pages/about/about.php",
-        work: "/pages/work/work.php",
-        articles: "/pages/articles/articles.php",
-        experements: "/pages/experements/experements.php",
+        about: "/portfolio/pages/about/about.php",
+        work: "/portfolio/pages/work/work.php",
+        articles: "/portfolio/pages/articles/articles.php",
+        experements: "/portfolio/pages/experements/experements.php",
     }
 };
 
